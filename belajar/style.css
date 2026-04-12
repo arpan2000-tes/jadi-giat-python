@@ -1,5 +1,7 @@
 body { font-family:'Times New Roman', Times, serif}
 
+body {background-color: aqua;}
+
 btn {
  background-color: #04AA6D; /* Green background */
  border: none; /* Remove default border */
