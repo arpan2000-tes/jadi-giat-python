@@ -26,7 +26,7 @@ import os
 def header():
     '''fungsi Header'''
     os.system("clear")
-    # os.system("cls")
+    #os.system("cls")
     print(f"{'PROGRAM MENGHITUNG LUAS':^40}")
     print(f"{'DAN KELILING PERSEGI PANJANG':^40}")
     print(f"{'-'*40:^40}")
@@ -59,18 +59,16 @@ while True:
     LEBAR,PANJANG = input_user()
     pilihan = input("pilih keliling atau luas?").lower()
     if pilihan == "keliling" :
-    	KELILING = hitung_keliling(LEBAR,PANJANG)
-    	display("keliling", KELILING)
+        KELILING = hitung_keliling(LEBAR,PANJANG)
+        display("keliling", KELILING)
     	
     elif pilihan == "luas":
-    	LUAS = hitung_luas(LEBAR,PANJANG)
-    	display("luas", LUAS)
+        LUAS = hitung_luas(LEBAR,PANJANG)
+        display("luas", LUAS)
     	
     else :
-    	continue 
+    	continue
+ 
     
-    isContinue = input("apakah lanjut (y/n)? ").lower()
-    if isContinue == "n":
-        break
 
 print("Program selesai, terima kasih")
